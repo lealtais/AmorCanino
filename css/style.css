@@ -1,4 +1,4 @@
-/* Reset básico */
+px/* Reset básico */
 body, h1, h2, h3, p, ul, li, a, form, input, button {
     margin: 0;
     padding: 0;
@@ -8,8 +8,58 @@ body, h1, h2, h3, p, ul, li, a, form, input, button {
  
   body {
     line-height: 1.6;
-    background-color: #9cc5eb;
+ 
   }
+
+  header {
+    background: #333;
+    color: #fff;
+    padding-top: 30px;
+    min-height: 70px;
+    border-bottom: #77aaff 3px solid;
+  }
+  
+  .header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .header h1 {
+    margin: 0;
+  }
+
+  #sobre{
+
+    font-size: 25px;
+    
+  }
+  
+  .header nav ul {
+    list-style: none;
+    padding: 0;
+  }
+  
+  .header nav ul li {
+    display: inline;
+    margin-left: 20px;
+  }
+  
+  .header nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    text-transform: uppercase;
+    font-size: 16px;
+    transition: color 0.3s, background-color 0.3s;
+  }
+  
+  .header nav ul li a:hover {
+    color: #333;
+    background-color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+  }
+
   
   .container {
     width: 80%;
@@ -27,7 +77,7 @@ body, h1, h2, h3, p, ul, li, a, form, input, button {
   }
   
   header h1 {
-    text-align: center;
+    text-align: left;
   }
   
   nav ul {
@@ -62,11 +112,8 @@ body, h1, h2, h3, p, ul, li, a, form, input, button {
   }
   
   #sobre, #equipe, #visita, #noticias {
-    background-color: #f7f7f7;
     margin: 20px 0;
-    padding: 20px;
-    border-radius: 8px;
-    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+
   }
   #noticias{
     background-color: #fff;
@@ -89,10 +136,63 @@ body, h1, h2, h3, p, ul, li, a, form, input, button {
     border: 1px solid #ccc;
     border-radius: 4px;
   }
-  .container{
-    font-weight: 600;
-    text-align: center;
+  
+
+.hero {
+  background: url('../imagens/amorCaninoPageHome.jpeg') no-repeat center center/cover;
+  height: 400px;
+  position: relative;
+  text-align: center;
+}
+
+.hero-text {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+}
+
+@keyframes fadeInOut {
+  0%, 100% {
+    opacity: 0;
   }
+  50% {
+    opacity: 1;
+  }
+}
+
+.message {
+  animation: fadeInOut 5s infinite;
+}
+
+  .image {
+    margin: 30px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+    max-width: 700px;
+    height: auto;
+    border-radius: 40px;
+    transition: transform 0.3s, box-shadow 0.3s;
+  }
+  
+  .image:hover {
+    transform: scale(1.05);
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+  }
+  
+  footer {
+    background: #333;
+    color: #fff;
+    text-align: center;
+    padding: 10px;
+    margin-top: 20px;
+  }
+  
   
   form button {
     background-color: #333;
